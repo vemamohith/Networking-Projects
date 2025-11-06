@@ -1,0 +1,53 @@
+Nov 04 18:25:56.007 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 04 18:25:56.007 HYPERVISOR: Started on IP = localhost, TCP port = 54006.
+Nov 04 18:25:56.491 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 04 18:25:56.493 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\vemam\GNS3\projects\DHCP\project-files\dynamips 
+Nov 04 18:25:56.493 GENERAL: working_dir=C:\Users\vemam\GNS3\projects\DHCP\project-files\dynamips
+Nov 04 18:25:56.493 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\vemam\GNS3\projects\DHCP\project-files\dynamips\2ee7f627-f068-4e89-a8e1-d783a972854b 
+Nov 04 18:25:56.497 GENERAL: working_dir=C:\Users\vemam\GNS3\projects\DHCP\project-files\dynamips\2ee7f627-f068-4e89-a8e1-d783a972854b
+Nov 04 18:25:56.499 HYPERVISOR: exec_cmd: vm create Google 3 c7200 
+Nov 04 18:25:56.499 VM: VM Google created.
+Nov 04 18:25:56.501 HYPERVISOR: exec_cmd: vm set_con_tcp_port Google 5007 
+Nov 04 18:25:56.501 HYPERVISOR: exec_cmd: c7200 get_mac_addr Google 
+Nov 04 18:25:56.503 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.503 HYPERVISOR: exec_cmd: vm slot_add_binding Google 0 0 C7200-IO-FE 
+Nov 04 18:25:56.506 HYPERVISOR: exec_cmd: vm set_disk0 Google 0 
+Nov 04 18:25:56.506 HYPERVISOR: exec_cmd: vm set_exec_area Google 64 
+Nov 04 18:25:56.508 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/vemam/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 04 18:25:56.510 HYPERVISOR: exec_cmd: c7200 set_mac_addr Google ca03.7748.0000 
+Nov 04 18:25:56.510 HYPERVISOR: exec_cmd: vm set_nvram Google 512 
+Nov 04 18:25:56.512 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.512 HYPERVISOR: exec_cmd: vm slot_add_binding Google 1 0 PA-GE 
+Nov 04 18:25:56.513 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.513 HYPERVISOR: exec_cmd: vm slot_add_binding Google 2 0 PA-GE 
+Nov 04 18:25:56.514 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.514 HYPERVISOR: exec_cmd: vm slot_add_binding Google 3 0 PA-GE 
+Nov 04 18:25:56.515 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.515 HYPERVISOR: exec_cmd: vm slot_add_binding Google 4 0 PA-GE 
+Nov 04 18:25:56.515 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.515 HYPERVISOR: exec_cmd: vm slot_add_binding Google 5 0 PA-2FE-TX 
+Nov 04 18:25:56.517 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:56.517 HYPERVISOR: exec_cmd: vm slot_add_binding Google 6 0 PA-8E 
+Nov 04 18:25:58.950 HYPERVISOR: exec_cmd: nio create_udp udp-d16433d4-e9b1-4a7b-a0f5-a170ffd97baf 10022 127.0.0.1 10023 
+Nov 04 18:25:59.248 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Google 6 0 udp-d16433d4-e9b1-4a7b-a0f5-a170ffd97baf 
+Nov 04 18:25:59.250 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:25:59.359 HYPERVISOR: exec_cmd: nio create_udp udp-575a49ed-49e2-4842-a60b-18145c7ff5f3 10028 127.0.0.1 10029 
+Nov 04 18:25:59.365 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Google 6 1 udp-575a49ed-49e2-4842-a60b-18145c7ff5f3 
+Nov 04 18:25:59.365 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:30:51.413 HYPERVISOR: exec_cmd: vm set_ghost_status Google 2 
+Nov 04 18:30:51.413 HYPERVISOR: exec_cmd: vm set_ghost_file Google C:\Users\vemam\GNS3\projects\DHCP\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 04 18:30:51.417 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:30:51.417 HYPERVISOR: exec_cmd: vm set_config Google configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Nov 04 18:30:51.417 HYPERVISOR: exec_cmd: vm start Google 
+Nov 04 18:31:21.943 HYPERVISOR: exec_cmd: vm extract_config Google 
+Nov 04 18:46:32.325 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:46:32.326 HYPERVISOR: exec_cmd: vm stop Google 
+Nov 04 18:46:32.574 VM: VM Google shutdown.
+Nov 04 18:46:32.575 HYPERVISOR: exec_cmd: vm extract_config Google 
+Nov 04 18:46:32.714 HYPERVISOR: exec_cmd: vm get_status Google 
+Nov 04 18:46:32.718 HYPERVISOR: exec_cmd: vm extract_config Google 
+Nov 04 18:46:32.722 HYPERVISOR: exec_cmd: vm delete Google 
+Nov 04 18:46:32.722 VM: VM Google destroyed.
+Nov 04 18:46:32.724 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 04 18:46:33.186 HYPERVISOR: Stopped.
+Nov 04 18:46:33.186 GENERAL: reset done.

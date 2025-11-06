@@ -1,0 +1,12 @@
+Oct 29 10:52:16.609 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 29 10:52:16.615 HYPERVISOR: Started on IP = localhost, TCP port = 60184.
+Oct 29 10:52:16.816 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 29 10:52:16.816 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips 
+Oct 29 10:52:16.819 GENERAL: working_dir=C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips
+Oct 29 10:52:16.819 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Oct 29 10:52:17.689 HYPERVISOR: exec_cmd: nio create_udp udp-ec22daa7-628a-4bc3-bc5c-44037ce948fd 10001 127.0.0.1 10000 
+Oct 29 10:52:17.694 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-ec22daa7-628a-4bc3-bc5c-44037ce948fd 
+Oct 29 10:52:17.711 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ec22daa7-628a-4bc3-bc5c-44037ce948fd 1 
+Oct 29 10:52:17.816 HYPERVISOR: exec_cmd: nio create_udp udp-bc44acd7-7d45-4db9-aa52-6ee5181c6047 10002 127.0.0.1 10003 
+Oct 29 10:52:17.817 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-bc44acd7-7d45-4db9-aa52-6ee5181c6047 
+Oct 29 10:52:17.830 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-bc44acd7-7d45-4db9-aa52-6ee5181c6047 1 

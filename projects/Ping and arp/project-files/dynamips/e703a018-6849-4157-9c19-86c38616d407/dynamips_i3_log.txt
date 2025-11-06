@@ -1,0 +1,69 @@
+Oct 31 12:20:43.755 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 31 12:20:43.755 HYPERVISOR: Started on IP = localhost, TCP port = 63611.
+Oct 31 12:20:44.221 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 31 12:20:44.223 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips 
+Oct 31 12:20:44.223 GENERAL: working_dir=C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips
+Oct 31 12:20:44.223 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips\ff01a0d2-bf9b-47c8-8191-5b63ea2ba9e9 
+Oct 31 12:20:44.225 GENERAL: working_dir=C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips\ff01a0d2-bf9b-47c8-8191-5b63ea2ba9e9
+Oct 31 12:20:44.225 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Oct 31 12:20:44.227 VM: VM R2 created.
+Oct 31 12:20:44.229 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5010 
+Oct 31 12:20:44.229 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Oct 31 12:20:44.229 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.229 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Oct 31 12:20:44.231 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Oct 31 12:20:44.233 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Oct 31 12:20:44.234 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/vemam/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Oct 31 12:20:44.234 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.59bc.0000 
+Oct 31 12:20:44.237 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Oct 31 12:20:44.237 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.237 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-GE 
+Oct 31 12:20:44.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.239 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-GE 
+Oct 31 12:20:44.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.239 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 PA-GE 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm slot_add_binding R2 4 0 PA-GE 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm slot_add_binding R2 5 0 PA-2FE-TX 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:44.241 HYPERVISOR: exec_cmd: vm slot_add_binding R2 6 0 PA-8E 
+Oct 31 12:20:46.033 HYPERVISOR: exec_cmd: nio create_udp udp-9487f015-daf9-4b58-a5fa-bc5f1f120f91 10014 127.0.0.1 10015 
+Oct 31 12:20:46.325 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-9487f015-daf9-4b58-a5fa-bc5f1f120f91 
+Oct 31 12:20:46.325 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:52.885 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 31 12:20:52.896 VM: VM Ghost created.
+Oct 31 12:20:52.896 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/vemam/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 31 12:20:52.905 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 31 12:20:53.647 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 31 12:20:53.649 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 31 12:20:53.831 VM: VM Ghost shutdown.
+Oct 31 12:20:53.833 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 31 12:20:53.835 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 31 12:20:53.835 VM: VM Ghost destroyed.
+Oct 31 12:20:53.866 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 31 12:20:53.867 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\vemam\GNS3\projects\Ping and arp\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Oct 31 12:20:53.867 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 31 12:20:53.878 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Oct 31 12:20:53.878 HYPERVISOR: exec_cmd: vm start R2 
+Oct 31 12:20:58.035 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/vemam/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Oct 31 12:21:24.370 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 31 12:26:24.393 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 31 12:31:24.469 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 31 12:36:24.538 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 01 18:25:11.806 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 01 18:25:11.806 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 01 18:25:12.012 VM: VM R2 shutdown.
+Nov 01 18:25:12.015 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 01 18:25:12.198 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 01 18:25:12.198 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 01 18:25:12.207 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 01 18:25:12.207 VM: VM R2 destroyed.
+Nov 01 18:25:12.210 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 01 18:25:12.658 HYPERVISOR: Stopped.
+Nov 01 18:25:12.658 GENERAL: reset done.
